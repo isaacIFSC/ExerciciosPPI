@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        .exemplo {
+            font-family: monospace;
+            background-color: #eaeaea;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+
+    <h2>Seletores de Tipo (Tag)</h2>
+    <p>Seleciona todos os elementos que correspondem a uma determinada tag HTML.</p>
+    <div class="exemplo">Exemplo: <code>p &#123; color: red; &#125;</code></div>
+
+    <h2>Seletores de Classe</h2>
+    <p>Utilizados para selecionar elementos com uma classe específica.</p>
+    <div class="exemplo">Exemplo: <code>.minha-classe &#123; font-size: 16px; &#125;</code></div>
+
+    <h2>Seletores de ID</h2>
+    <p>Seleciona um elemento com um ID específico.</p>
+    <div class="exemplo">Exemplo: <code>#meu-id &#123; border: 1px solid black; &#125;</code></div>
+
+    <h2>Seletores de Atributo</h2>
+    <p>Selecionam elementos com base em seus atributos.</p>
+    <div class="exemplo">Exemplo: <code>input[type="text"] &#123; width: 100%; &#125;</code></div>
+
+    <h2>Seletores Descendentes</h2>
+    <p>Seleciona todos os elementos que são descendentes de um elemento específico.</p>
+    <div class="exemplo">Exemplo: <code>div p &#123; color: green; &#125;</code></div>
+
+    <h2>Seletores Filhos</h2>
+    <p>Seleciona todos os elementos que são filhos diretos de um elemento específico.</p>
+    <div class="exemplo">Exemplo: <code>div &gt; p &#123; color: blue; &#125;</code></div>
+
+    <h2>Seletores Irmãos Adjacentes</h2>
+    <p>Seleciona o próximo elemento irmão de um elemento específico.</p>
+    <div class="exemplo">Exemplo: <code>h2 + p &#123; margin-top: 0; &#125;</code></div>
+
+    <h2>Seletores Irmãos Gerais</h2>
+    <p>Seleciona todos os elementos irmãos de um elemento específico.</p>
+    <div class="exemplo">Exemplo: <code>h2 ~ p &#123; margin-top: 0; &#125;</code></div>
+
+    <h2>Seletores de Pseudo-classes</h2>
+    <p>Permitem estilizar elementos em um estado particular, como hover ou focus.</p>
+    <div class="exemplo">Exemplo: <code>a:hover &#123; text-decoration: underline; &#125;</code></div>
+
+    <h2>Seletores de Pseudo-elementos</h2>
+    <p>Usados para estilizar partes de um elemento.</p>
+    <div class="exemplo">Exemplo: <code>p::first-letter &#123; font-size: 200%; &#125;</code></div>
+
+    <h2>Seletores Universais</h2>
+    <p>Seleciona todos os elementos em um documento.</p>
+    <div class="exemplo">Exemplo: <code>* &#123; margin: 0; padding: 0; &#125;</code></div>
+
+    <h2>Seletores de Combinação</h2>
+    <p>Combina diferentes seletores para criar regras mais específicas.</p>
+    <div class="exemplo">Exemplo: <code>p.classe1#id1 &#123; color: red; &#125;</code></div>
+
+</body>
+</html>
