@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="../style.css">
+        <title>Exercicio 11</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                background-color: #ffffff;
+            }
+
+            .chat-conteudo {
+                border: 1px solid;
+                position:absolute;
+                width: 300px;
+                padding: 10px;
+                border-radius: 10px;
+                bottom:0px;
+                right:0px;
+            }
+
+            .chat {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+
+            .mensagem {
+                background-color: lightgray;
+                color: #000;
+                padding: 10px;
+                border-radius: 10px;
+                max-width: 200px;
+                position: relative;
+            }
+
+            .mensagem img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-right: 10px;
+            }
+
+            .hora {
+                font-size: 10px;
+                color: #777;
+                position: absolute;
+                bottom: -12px;
+                right: 5px;
+            }
+
+            .resposta {
+                background-color: lightgreen; 
+                color: #000;
+                padding: 10px;
+                border-radius: 10px;
+                max-width: 200px;
+                position: relative;
+                margin-left: auto;
+                text-align: right;
+            }
+
+            .resposta img {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+
+            .resposta-time {
+                font-size: 10px;
+                color: #ddd;
+                position: absolute;
+                bottom: -12px;
+                left: 5px;
+            }
+
+            .input-text {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 10px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="chat-conteudo">
+            <div class="chat">
+                <div class="mensagem">
+                    <img src="svg2.svg" alt="Foto avatar" class="avatar"> Olá, tudo bem?
+                    <span class="hora">00:50</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="resposta">
+                    Estou bem sim, e você?
+                    <img src="avatar-svgrepo-com.svg" alt="Foto Hudson" class="avatar">
+                    <span class="resposta-time">00:55</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="mensagem">
+                    <img src="svg2.svg" alt="Foto avatar" class="avatar"> Vamos sair hoje? Sabe, conversar e Lorem ipsum dolor sit amet consectetur...
+                    <span class="hora">01:01</span>
+                </div>
+            </div>
+
+            <div class="chat">
+                <div class="resposta">
+                    Criatura...
+                    <img src="avatar-svgrepo-com.svg" alt="Foto Hudson" class="avatar">
+                    <span class="resposta-time">00:55</span>
+                </div>
+            </div>
+
+            <div class="input-text">
+                <input id="mensagem" type="textarea" placeholder="Digite sua mensagem">
+                <input type="submit" value="Enviar">
+            </div>
+        </div>
+    </body>
+</html>
